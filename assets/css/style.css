@@ -70,11 +70,13 @@ body {
 }
 
 .heading {
-  font-family: AvenirNext-Regular;
   font-family: AvenirNext-Bold;
 }
 .heading.font-demi-bold {
   font-family: AvenirNext-DemiBold;
+}
+.heading.font-medium {
+  font-family: AvenirNext-Medium;
 }
 
 .text-orange {
@@ -106,6 +108,11 @@ body {
   background-color: #f3780b;
   border-radius: 50px;
 }
+@media (max-width: 767px) {
+  .btn-orange, .btn-white, .btn-yellow {
+    font-size: 16px;
+  }
+}
 .btn-orange:hover, .btn-white:hover, .btn-yellow:hover {
   background-color: #db6c0a;
   color: #fff;
@@ -120,12 +127,14 @@ body {
 }
 
 .btn-white {
-  color: #333;
+  color: #f3780b;
   background-color: #fff;
+  transition: all 0.2s linear;
 }
 .btn-white:hover {
   background-color: #fff;
   color: #f3780b;
+  opacity: 0.8;
 }
 
 /*===// end of components css === */
@@ -160,6 +169,38 @@ body {
 }
 .hero .sub-heading strong {
   font-family: AvenirNext-Bold;
+}
+
+.special-offer .price-card .title {
+  font-family: AvenirNext-Medium;
+  text-transform: uppercase;
+}
+.special-offer .price-card .sub-title {
+  font-size: 19px;
+}
+@media (max-width: 767px) {
+  .special-offer .price-card .sub-title {
+    font-size: 14px;
+  }
+}
+.special-offer .price-card .price {
+  font-family: AvenirNext-Bold;
+  font-size: 48px;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .special-offer .price-card .price {
+    font-size: 28px;
+  }
+}
+.special-offer .price-card .price span {
+  font-family: AvenirNext-Regular;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .special-offer .price-card .price span {
+    font-size: 14px;
+  }
 }
 
 /*===// end of pages  === */

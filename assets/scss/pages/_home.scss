@@ -35,3 +35,33 @@
     }
   }
 }
+
+.special-offer {
+  .price-card {
+    .title {
+      font-family: AvenirNext-Medium;
+      text-transform: uppercase;
+    }
+    .sub-title {
+      font-size: 19px;
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+    }
+    .price {
+      font-family: AvenirNext-Bold;
+      font-size: 48px;
+      white-space: nowrap;
+      @media (max-width: 767px) {
+        font-size: 28px;
+      }
+      span {
+        font-family: AvenirNext-Regular;
+        font-size: 20px;
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

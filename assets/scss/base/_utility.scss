@@ -1,18 +1,5 @@
 @use "../abstracts/variables";
 
-// text color
-.text-orange {
-  color: variables.$color-orange;
-}
-
-.text-yellow {
-  color: variables.$color-yellow;
-}
-
-.text-dark {
-  color: variables.$color-text-dark;
-}
-
 // background
 .bg-orange {
   background-color: variables.$color-orange;
