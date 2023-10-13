@@ -4,6 +4,7 @@
   background: url(../images/hero-bg.png) no-repeat center center/cover;
   position: relative;
   color: #fff;
+  padding: 60px 15px;
 
   &::before {
     content: "";
@@ -15,7 +16,22 @@
     left: 0;
   }
 
+  .brand-logo {
+    margin-bottom: 120px;
+    .logo-img {
+      @media (max-width: 575px) {
+        max-width: 180px;
+      }
+    }
+  }
+
   .heading {
     white-space: pre-line;
+  }
+
+  .sub-heading {
+    strong {
+      font-family: AvenirNext-Bold;
+    }
   }
 }

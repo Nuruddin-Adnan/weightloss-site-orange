@@ -99,6 +99,35 @@ body {
 
 /*===// end of base css === */
 /*=== components css start === */
+.btn-orange, .btn-white, .btn-yellow {
+  font-family: AvenirNext-Medium;
+  color: #fff;
+  font-size: 18px;
+  background-color: #f3780b;
+  border-radius: 50px;
+}
+.btn-orange:hover, .btn-white:hover, .btn-yellow:hover {
+  background-color: #db6c0a;
+  color: #fff;
+}
+
+.btn-yellow {
+  background-color: #f3a90b;
+}
+.btn-yellow:hover {
+  background-color: #db980a;
+  color: #fff;
+}
+
+.btn-white {
+  color: #333;
+  background-color: #fff;
+}
+.btn-white:hover {
+  background-color: #fff;
+  color: #f3780b;
+}
+
 /*===// end of components css === */
 /*=== layout css start === */
 /*===// end of layout css === */
@@ -107,6 +136,7 @@ body {
   background: url(../images/hero-bg.png) no-repeat center center/cover;
   position: relative;
   color: #fff;
+  padding: 60px 15px;
 }
 .hero::before {
   content: "";
@@ -117,8 +147,19 @@ body {
   top: 0;
   left: 0;
 }
+.hero .brand-logo {
+  margin-bottom: 120px;
+}
+@media (max-width: 575px) {
+  .hero .brand-logo .logo-img {
+    max-width: 180px;
+  }
+}
 .hero .heading {
   white-space: pre-line;
+}
+.hero .sub-heading strong {
+  font-family: AvenirNext-Bold;
 }
 
 /*===// end of pages  === */

@@ -1,0 +1,33 @@
+.btn-orange {
+  font-family: AvenirNext-Medium;
+  color: #fff;
+  font-size: 18px;
+  background-color: #f3780b;
+  border-radius: 50px;
+
+  &:hover {
+    background-color: darken(#f3780b, 5);
+    color: #fff;
+  }
+}
+
+.btn-yellow {
+  @extend .btn-orange;
+  background-color: #f3a90b;
+
+  &:hover {
+    background-color: darken(#f3a90b, 5);
+    color: #fff;
+  }
+}
+
+.btn-white {
+  @extend .btn-orange;
+  color: #333;
+  background-color: #fff;
+
+  &:hover {
+    background-color: #fff;
+    color: #f3780b;
+  }
+}
