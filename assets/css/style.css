@@ -213,7 +213,7 @@ body {
   background: url(../images/weight-loss-program-works-bg.png) no-repeat center center/cover;
   position: relative;
   color: #fff;
-  padding: 40px 15px;
+  padding: 40px 0px;
   z-index: 0;
 }
 .weight-loss-program-works::before {
