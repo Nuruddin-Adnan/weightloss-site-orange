@@ -65,3 +65,11 @@
     }
   }
 }
+
+.money-back-guarantee {
+  .guarantee-heading {
+    @media (min-width: 992px) {
+      font-size: 50px;
+    }
+  }
+}

@@ -88,7 +88,7 @@ body {
 }
 
 .text-dark {
-  color: #333;
+  color: #333 !important;
 }
 
 .bg-orange {
@@ -200,6 +200,12 @@ body {
 @media (max-width: 767px) {
   .special-offer .price-card .price span {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  .money-back-guarantee .guarantee-heading {
+    font-size: 50px;
   }
 }
 
