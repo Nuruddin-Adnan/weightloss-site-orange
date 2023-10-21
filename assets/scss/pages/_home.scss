@@ -6,6 +6,10 @@
   color: #fff;
   padding: 60px 15px;
 
+  @media (max-width: 575px) {
+    padding-top: 30px;
+  }
+
   .brand-logo {
     margin-bottom: 120px;
     .logo-img {
