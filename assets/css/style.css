@@ -137,8 +137,57 @@ body {
   opacity: 0.8;
 }
 
+.legal-popup {
+  font-family: "Times New Roman", Times, serif;
+}
+
 /*===// end of components css === */
 /*=== layout css start === */
+.footer {
+  background-color: #213343;
+  transition: all 0.3s ease;
+  color: #fff;
+  font-family: sans-serif;
+}
+.footer .social-link li a {
+  color: #b6c7d6;
+  font-size: 1.5rem;
+}
+.footer .social-link li a:hover {
+  color: #fff;
+}
+.footer .copyright-text {
+  font-size: 12px;
+  color: #b6c7d6;
+}
+.footer .footer-link li {
+  position: relative;
+}
+.footer .footer-link li .nav-link {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: underline;
+  padding: 0.5rem 1rem;
+}
+.footer .footer-link li .nav-link:hover {
+  text-decoration: none;
+  color: #b6c7d6;
+}
+.footer .footer-link li::after {
+  display: inline-block;
+  font-size: 0.75em;
+  color: #7691ad;
+  position: absolute;
+  content: "|";
+  top: 50%;
+  right: -0.25em;
+  transform: translateY(-50%);
+}
+.footer .footer-link li:last-child::after {
+  display: none;
+}
+
 /*===// end of layout css === */
 /*=== pages start === */
 .hero {
