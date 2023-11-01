@@ -140,6 +140,12 @@ body {
 .legal-popup {
   font-family: "Times New Roman", Times, serif;
 }
+.legal-popup ul li {
+  list-style: disc;
+}
+.legal-popup .list-numbered li {
+  list-style: decimal;
+}
 
 /*===// end of components css === */
 /*=== layout css start === */
@@ -148,6 +154,53 @@ body {
   transition: all 0.3s ease;
   color: #fff;
   font-family: sans-serif;
+}
+.footer .social-link {
+  position: relative;
+}
+.footer .social-link::before {
+  content: "";
+  width: 30%;
+  height: 0.5px;
+  box-sizing: border-box;
+  box-shadow: none;
+  background-color: #7691ad;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+@media (min-width: 992px) {
+  .footer .social-link::before {
+    width: 35%;
+  }
+}
+@media (max-width: 575px) {
+  .footer .social-link::before {
+    width: 0%;
+  }
+}
+.footer .social-link::after {
+  content: "";
+  width: 30%;
+  height: 0.5px;
+  box-sizing: border-box;
+  box-shadow: none;
+  background-color: #7691ad;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+@media (min-width: 992px) {
+  .footer .social-link::after {
+    width: 35%;
+  }
+}
+@media (max-width: 575px) {
+  .footer .social-link::after {
+    width: 0%;
+  }
 }
 .footer .social-link li a {
   color: #b6c7d6;

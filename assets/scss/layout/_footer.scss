@@ -5,6 +5,47 @@
     font-family: sans-serif;
 
     .social-link {
+        position: relative;
+
+        &::before {
+            content: '';
+            width: 30%;
+            height: 0.5px;
+            box-sizing: border-box;
+            box-shadow: none;
+            background-color: #7691ad;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+
+            @media (min-width: 992px) {
+                width: 35%;
+            }
+            @media (max-width: 575px) {
+                width: 0%;
+            }
+        }
+
+        &::after {
+            content: '';
+            width: 30%;
+            height: 0.5px;
+            box-sizing: border-box;
+            box-shadow: none;
+            background-color: #7691ad;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+
+            @media (min-width: 992px) {
+                width: 35%;
+            }
+            @media (max-width: 575px) {
+                width: 0%;
+            }
+        }
         li {
             a {
                 color: #b6c7d6;

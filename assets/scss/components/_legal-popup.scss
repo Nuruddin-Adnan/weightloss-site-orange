@@ -1,3 +1,13 @@
 .legal-popup {
     font-family: 'Times New Roman', Times, serif;
+    ul  {
+       li {
+        list-style: disc;
+       } 
+    }
+    .list-numbered {
+        li {
+            list-style: decimal;
+        }
+    }
 }
