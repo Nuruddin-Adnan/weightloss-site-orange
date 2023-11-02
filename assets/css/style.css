@@ -141,6 +141,9 @@ body {
   opacity: 0.8;
 }
 
+.legal-popup {
+  font-family: times-new-roman;
+}
 .legal-popup ul li {
   list-style: disc;
 }
