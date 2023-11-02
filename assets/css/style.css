@@ -19,6 +19,10 @@
   font-family: AvenirNext-Bold;
   src: url(../fonts/avenir-next-bold.ttf);
 }
+@font-face {
+  font-family: times-new-roman;
+  src: url(../../fonts/times-new-roman.ttf);
+}
 /*===// end of abstracts css === */
 /*=== base css start === */
 * {
@@ -138,7 +142,12 @@ body {
 }
 
 .legal-popup {
-  font-family: "Times New Roman", Times, serif;
+  font-family: times-new-roman;
+}
+.legal-popup .table td, .legal-popup .table th,
+.legal-popup li,
+.legal-popup p {
+  font-size: 18px;
 }
 .legal-popup ul li {
   list-style: disc;
